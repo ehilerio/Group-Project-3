@@ -1,0 +1,368 @@
+/*General*/
+body {
+  font-family: "josefin sans", sans-serif !important;
+}
+
+.top-buffer {
+  margin-top: 8%;
+}
+
+/* Styling for double navbar */
+html,
+body,
+header {
+  height: 12vh;
+  font-family: "josefin sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.main-logo {
+  left: 0%;
+  top: 28%;
+  margin-left: 4% !important;
+}
+
+.nav-link {
+  color: darkgray !important;
+  font-size: 17px;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-nav li a:hover {
+  color: white !important;
+}
+
+.fixed-top {
+  padding: 20px 0 20px 8px;
+}
+
+/*Jumbotron*/
+
+.showcase {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0x;
+}
+
+.video-container {
+  position: absolute;
+  top: 2;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--primary-color)
+    url("./https://traversymedia.com/downloads/cover.jpg") no-repeat center
+    center/cover;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.content {
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--primary-color);
+  color: #fff;
+  margin-top: 25px;
+  opacity: 0.99;
+}
+
+.hero_btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  border: solid #fff 1px;
+  margin-top: 25px;
+  opacity: 0.7;
+}
+
+.hero_btn:hover {
+  transform: scale(0.98);
+  background: #ed1556;
+  color: white;
+  text-decoration: none !important;
+  opacity: 80%;
+}
+
+/*Button Style*/
+.hero_btn2 {
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--primary-color);
+  color: #ed1556;
+  border-radius: 5px;
+  border: solid #ed1556 1px;
+  margin-top: 25px;
+  opacity: 0.7;
+}
+
+.hero_btn2:hover {
+  transform: scale(0.98);
+  background: #ed1556;
+  color: white;
+  text-decoration: none !important;
+  opacity: 80%;
+}
+
+.hero_btn3 {
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  border: solid #fff 1px;
+  margin-top: 25px;
+  opacity: 0.7;
+}
+
+.hero_btn3:hover {
+  transform: scale(0.98);
+  background: #2b93d2;
+  color: white;
+  text-decoration: none !important;
+  opacity: 80%;
+}
+
+/*Card Container*/
+
+.container-intro {
+  padding: 90px 0px 30px 0px;
+}
+
+.container-bg {
+  /* fallback for old browsers */
+  background: #ed1556;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(237, 21, 86, 1),
+    rgba(43, 147, 210, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(237, 21, 86, 1),
+    rgba(43, 147, 210, 1)
+  );
+
+  padding: 90px 0px 90px 0px;
+}
+
+.container-bg-first {
+  background: white;
+  padding: 90px 0px 90px 0px;
+}
+
+/* arrow */
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  z-index: 90;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 1rem;
+  height: 1rem;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 3s ease-in-out infinite;
+  -moz-animation: fade_move_down 3s ease-in-out infinite;
+  animation: fade_move_down 3s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+@-moz-keyframes fade_move_down {
+  0% {
+    -moz-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/*Footer Navigation*/
+.footer style {
+  height: 12vh;
+  font-family: "josefin sans", sans-serif;
+}
+.footer {
+  background: #000;
+  color: white;
+
+  .links {
+    ul {
+      list-style-type: none;
+    }
+    li a {
+      color: white;
+      transition: color 0.2s;
+      &:hover {
+        text-decoration: none;
+        color: #4180cb;
+      }
+    }
+  }
+
+  .about-company {
+    i {
+      font-size: 25px;
+    }
+    a {
+      color: white;
+      transition: color 0.2s;
+      &:hover {
+        color: #4180cb;
+      }
+    }
+  }
+
+  .location {
+    i {
+      font-size: 18px;
+    }
+  }
+
+  .copyright p {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.img-thumbnail {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-dark {
+    background-color: black !important;
+  }
+}
+
+#main-bar {
+  position: absolute;
+  width: 100%;
+  top: 6%;
+  position: fixed;
+  z-index: 1;
+  background-color: black !important;
+}
+
+#main-bar .nav-item {
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+  margin-bottom: 1rem;
+}
+
+.navbar .dropdown-menu {
+  border: none;
+  background-color: black !important;
+}
+
+/*Footer Navigation*/
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-item {
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.25rem;
+  }
+
+  /* makes the dropdown full width  */
+  .navbar .dropdown {
+    position: static;
+  }
+
+  .navbar .dropdown-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    /*  height of nav-item  */
+    top: 45px;
+
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  /* shows the dropdown menu on hover */
+  .navbar .dropdown:hover .dropdown-menu,
+  .navbar .dropdown .dropdown-menu:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+}

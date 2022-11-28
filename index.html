@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Amazing Lash Studio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!--Link to Call in Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!--Link to Call in Css File-->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="Logo.png" alt="Amazing Lash Studio logo" />
+
+
+</head>
+
+<!--Content-->
+
+<body class="bg-dark">
+
+  <!--Navigation bar-->
+  <header class="bg-dark">
+
+    <!-- top navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark col-xl-12">
+      <!--Logo-->
+      <div class="m-0 order-0 order-md-1 position-absolute main-logo">
+
+        <a class="mx-auto" href="index.html">
+          <img src="logo.png" class="nav-brand" alt="logo" height="82px" width="120px">
+        </a>
+      </div>
+      <!--End of Logo-->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a href="#" class="nav-link text-uppercase">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-uppercase">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-uppercase">Own A Studio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-uppercase">Career</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-uppercase">Gift Cards</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-uppercase">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+    <!-- bottom navbar -->
+    <nav class="navbar navbar-expand-lg col-xl-12 navbar-dark bg-dark" id="main-bar">
+
+      <div class="d-flex flex-grow-1">
+
+        <span class="w-100 d-lg-none d-block">
+          <!-- hidden spacer to center brand on mobile -->
+        </span>
+
+        <div class="w-100 text-right">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="collapse navbar-collapse flex-grow-1 text-right text-white" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#">Book Online</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container">
+                <div class="row col-xl-12">
+                  <div class="col-md-4 col-xl-3">
+                    <span class="text-uppercase text-white">Lash Services</span>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Lash Extensions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Lash Lift</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                  <div class="col-md-4 col-xl-4">
+                    <span class="text-uppercase text-white">Waxing and Tinting Services</span>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Brow Waxing and Tinting</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Lash Tinting</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Facial Waxing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Brow Lamination</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                  <div class="col-md-4"></div>
+                  <!-- /.col-md-4  -->
+                </div>
+              </div>
+              <!--  /.container  -->
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Locations</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container col-xl-12">
+                <div class="row col-xl-12">
+                  <div class="col-md-4 col-xl-3">
+                    <span class="text-uppercase text-white">Locations by State</span>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Alabama</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Arizona</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">California</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Colorado</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Connecticut</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Florida</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Georgia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Illinois</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                  <div class="col-md-4 m-4 offset-xl-0 col-xl-3">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Indiana</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Kansas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Maryland</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Minnesota</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Missouri</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Nevada</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">New Jersey</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">New York</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                  <div class="col-md-4 m-4 offset-xl-1 col-xl-2">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">North Carolina</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Oklahoma</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Pennsylvania</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">South Carolina</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Tenessee</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Texas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Utah</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Virginia</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                  <div class="col-md-4 m-4 offset-xl-1 col-xl-2">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Washington State</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                </div>
+              </div>
+              <!--  /.container  -->
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Lash Care</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container col-xl-12">
+                <div class="row col-xl-12">
+                  <div class="col-md-4 col-xl-3">
+                    <span class="text-uppercase text-white">Lash Extensions</span>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Before You Arrive</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">What To Expect</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Customize your Look</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">After Care</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Glam Cam</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                  <div class="col-md-4 offset-xl-0 col-xl-3">
+                    <span class="text-uppercase text-white">Lash Lift</span>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Before You Arrive</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">What To Expect</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">After Care</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                </div>
+              </div>
+              <!--  /.container  -->
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container col-xl-12">
+                <div class="row col-xl-12">
+                  <div class="col-md-4 col-xl-3">
+                    <span class="text-uppercase text-white">About Us</span>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Our Story</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Our Safety</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 col-xl-3">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Privacy Policy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Terms and Conditions</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                </div>
+              </div>
+              <!--  /.container  -->
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- Background image -->
+  <section class="showcase">
+    <div class="video-container img-responsive">
+      <video src="Hero.mp4" autoplay muted loop></video>
+    </div>
+    <div class="content">
+      <h1>Your Lashes Your Way</h1>
+      <h5>Setting industry standards, one glamourous lash at a time</h5>
+      <a href="#about" class="hero_btn">Book Now</a>
+    </div>
+    <a href="#1">
+      <div class="scroll-down"></div>
+    </a>
+  </section>
+
+  <!--Introduction-->
+  <section id="1" class="container-intro mt-5 mx-auto col-lg-6 col-md-7 col-sm-8">
+    <h2 class="text-center text-white">The Amazing Lash Studio Experience</h2>
+    <p class="text-center text-white">Using our patented application process, your stylist will attach light-weight
+      eyelash extensions to each of your lashes to give you the most natural-looking lash line. Our styles can't be
+      found anywhere else, and are customized to leave you looking your best. </p>
+    <p class="text-center text-white">We use safe, professional grade adhesive
+      and the utmost care to give you the look you desire while you relax and enjoy the tranquility of your private lash
+      suite. It's an amazing experience we know you will love instantly!</p>
+  </section>
+  <!--End of Introduction-->
+
+  <!--Service Cards-->
+  <section class=" container-bg">
+    <h2 class="text-center text-white">Our Services</h2>
+
+    <div class="card-deck col-lg-7 col-md-8 col-sm-9 mx-auto mt-5 ">
+      <!--Card One-->
+      <div class="card text-center border-0">
+        <img src="Lash Extensions.png" class="card-img-top" alt="Synthetic lashes being places on regular lashes">
+        <div class="card-body">
+          <h4 class="card-title">Lash Extensions</h4>
+          <p class="card-text">Customize your lashes from a variety of styles, lengths, and curls to create a look
+            you'll love.</p>
+          <a href="" class="link">Learn More</a>
+        </div>
+      </div>
+      <!--Card Two-->
+      <div class="card text-center border-0">
+        <img src="Lash Lift.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Lash Lift</h4>
+          <p class="card-text"> Elevate and curl your lashes up to 6 weeks with our deep-conditioning Keratin
+            treatment.
+          </p>
+          <a href="" class="link">Learn More</a>
+        </div>
+      </div>
+      <!--Card Three-->
+      <div class="card text-center border-0">
+        <img src="Eyebrow Tinting.png" class="card-img-top" alt="Tinting eyebrows">
+        <div class="card-body">
+          <h4 class="card-title">Brow Waxing and Tinting</h4>
+          <p class="card-text">Sculpt and define your eyebrows with our custom, sensitive formula to create
+            a
+            brighter, lifted look.</p>
+          <a href="" class="link">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col text-center">
+      <button class="hero_btn">View All Services</button>
+    </div>
+
+  </section>
+  <!--End of Service Cards-->
+
+  <!--Customized Length & Thickness Card-->
+  <div class="container-bg-first">
+    <div class="row valueProp mx-auto col-lg-9">
+      <div class="imageContainer col-lg-6">
+        <img src="Lash Style.png" alt="Close up photo of eyelash">
+      </div>
+      <div class="text col-lg-5 mt-sm-4">
+        <h2>Customized Length &#38; Thickness</h2>
+        <p class="mt-3">
+          Our expert stylists will help you select the style best suited for your eye shape, and desired look, even
+          taking into consideration your lifestyle to ensure your best lash look.
+        </p>
+        <p>In addition to our specially designed lightweight synthetic eyelash extensions, Amazing Lash Studio also
+          offers a little extra va-va-voom with our Volume lashes for those who want an even fuller lash line or a
+          special occasion look.</p>
+        <div class="col-lg-6">
+          <button class="hero_btn2">View All Lash Styles</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Customized Length & Thickness Card -->
+
+  <!--First-Time Visit Card-->
+  <div class="container-bg">
+    <div class="row valueProp mx-auto col-lg-9">
+      <div class="text-white col-lg-5 mt-sm-4 mr-auto">
+        <h3>First-Time Visitor? No Worries!</h3>
+        <p class="mt-3"> You'll love our spa-like salon experience and the professional expertise of our licensed
+          stylists, who will
+          help you customize the length, fullness and shape to match your eye structure, lifestyle and personal style.
+        </p>
+        <p>Once you've discovered how amazing your eyes can look even before
+          you apply
+          makeup, you'll wonder how you made it this long without lash extensions.</p>
+        <p>We have provided a guide on what to expect when you visit one of our Amazing Lash Studio locations for your
+          convenience.</p>
+        <div class="col-lg-6">
+          <button class="hero_btn3">What To Expect</button>
+        </div>
+      </div>
+      <div class="imageContainer col-lg-6">
+        <img src="ALS Lobby.png" alt="Amazing Lash Studio">
+      </div>
+    </div>
+  </div>
+  <!--End of First-Time Visit Card-->
+
+  <!--After Care Card-->
+  <div class="container-bg-first">
+    <div class="row valueProp mx-auto col-lg-9">
+      <div class="imageContainer col-lg-6">
+        <img src="Aftercare.png" alt="Close up photo of eyelash being brushed by mascara brush">
+      </div>
+      <div class="text col-lg-5 mt-sm-4">
+        <h2>Caring For Your Lashes</h2>
+        <p class="mt-3">
+          These are some of the tips we recommend to achieve the most glamorous, longest lasting results:
+        <ul>
+          <li>Keep your new lashes dry and avoid
+            participating in activities with excessive humidity and that cause you to sweat.</li>
+          <li>Do not use oil-based products
+            of any kind on or near your eyes.</li>
+          <li>You should avoid touching your lashes directly, and we recommend sleeping on
+            your side or back, not face down.</li>
+        </ul>
+        </p>
+        <div class="col-lg-7">
+          <button class="hero_btn2">View All Aftercare Tips</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of After Care Card -->
+
+  <!--Contact Form-->
+  <div class="container">
+    <h2 class="col-lg-6 col-md-6 col-sm-9 mt-5 ml-auto mx-auto text-white text-center">Book An Appointment Today!</h2>
+    <form class="col-lg-6 col-md-6 col-sm-9 mt-5 ml-auto mx-auto text-white">
+      <!-- Name input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="form4Example1" class="form-control" />
+        <label class="form-label" for="form4Example1">Name</label>
+      </div>
+
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="form4Example2" class="form-control" />
+        <label class="form-label" for="form4Example2">Email address</label>
+      </div>
+
+      <!-- Message input -->
+      <div class="form-outline mb-4">
+        <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+        <label class="form-label" for="form4Example3">Message</label>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check d-flex  mb-4">
+        <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+        <label class="form-check-label" for="form4Example4">
+          Send me a copy of this message
+        </label>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="hero_btn btn-block mb-4">Send</button>
+    </form>
+  </div>
+  <!--End of Contact Form-->
+
+
+  <!--Footer Navigation-->
+  <div class="mt-5 pt-5 pb-5 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xs-12 about-company">
+          <h2><img src="Logo.png" alt="Amazing Lash Studio logo" class="img-thumbnail"></h2>
+          <p class="text-center">Your Lashes Your Way </p>
+          <p>
+          <p class="text-center"><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i
+                class="fa fa-linkedin-square"></i></a></p>
+        </div>
+        <div class="col-lg-3 col-xs-12 links">
+          <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+          <ul class="m-0 p-0">
+            <li> <a href="#">About </a></li>
+            <li> <a href="#">Contact</a></li>
+            <li> <a href="#">Privacy Policy </a></li>
+            <li> <a href="#">Terms and Conditions</a></li>
+            <li> <a href="#">Site Map</a></li>
+            <li> <a href="#">Media and Buzz</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-xs-12 location">
+          <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+          <div class="dropdown-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              city/state/zip
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action two</a></li>
+              <li><a class="dropdown-item" href="#">Action three</a></li>
+            </ul>
+          </div>
+          <p>&#x2709; info@amazinglashstudio.com</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col copyright">
+          <p class="text-center"><small class="text-white-100">©2019 Amazing Lash Studio, LLC. All rights reserved.
+              New
+              clients only. Can not be combined with any other offers or discounts. Limited time offer. Each Amazing
+              Lash Studio® is independently owned and operated.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of Footer Navigation-->
+
+
+
+  <!-- jquery for color change navbar on scroll -->
+  <script>
+
+    $(document).ready(function () {
+      // executes when HTML-Document is loaded and DOM is ready
+
+      // breakpoint and up  
+      $(window).resize(function () {
+        if ($(window).width() >= 980) {
+          var scroll = $(window).scrollTop();
+          if (scroll > 280) {
+            $(".navbar-dark").css("background", "black");
+          }
+          else {
+            $(".navbar-dark").css("background", "transparent");
+          }
+
+          // when you hover a toggle show its dropdown menu
+          $(".navbar .dropdown-toggle").hover(function () {
+            $(this).parent().toggleClass("show");
+            $(this).parent().find(".dropdown-menu").toggleClass("show");
+          });
+
+          // hide the menu when the mouse leaves the dropdown
+          $(".navbar .dropdown-menu").mouseleave(function () {
+            $(this).removeClass("show");
+          });
+
+          // do something here
+        }
+      });
+
+
+
+      // document ready  
+    });
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>
